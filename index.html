@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memory Game</title>
+    <link rel="icon" href="/cards%20image/back-end.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+    <div id="pyro" class="pyro">
+        <div class="before"></div>
+        <div class="after"></div>
+    </div>
+    <header>
+        <div>
+            <nav class="navbar">
+                <div class="container">
+                    <div class="header-section">
+                        <div id="button-select" class="btn-group me-2 button-select" role="group" aria-label="First group">
+                            <button data-rows="2" data-columns="3" type="button" class="btn btn-outline-secondary">3x2</button>
+                            <button data-rows="3" data-columns="4" type="button" class="btn btn-outline-secondary">4x3</button>
+                            <button data-rows="4" data-columns="5" type="button" class="btn btn-outline-secondary">5x4</button>
+                            <button data-rows="5" data-columns="6" type="button" class="btn btn-outline-secondary">6x5</button>
+                            <button data-rows="6" data-columns="7" type="button" class="btn btn-outline-secondary">7x6</button>
+                            <button data-rows="7" data-columns="8" type="button" class="btn btn-outline-secondary">8x7</button>
+                            <button data-rows="8" data-columns="9" type="button" class="btn btn-outline-secondary">9x8</button>
+                        </div>
+                        <div id="button-section">
+                            <button id="start" onclick="startGame()" class="btn btn-primary">Start</button>
+                            <button id="rules" onclick="rulesGame()" class="btn btn-success">Rules</button>
+                        </div>
+                        <div class="timer-start-again">
+                            <p id="timer">0</p>
+                            <button id="start-again" onclick="startAgainGame()" class="btn btn-danger">Start Again</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section id="memory-case" class="mb-2"></section>
+        </div>
+    </main>
+    <script src="module.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>
