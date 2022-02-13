@@ -43,6 +43,11 @@ function rulesGame () {
     alert(" Opening The Cards Correctly 10 Points.  5 Points Are Deducted When Opened Incorrectly.")
 }
 
+function handleChangePage (URL) {
+    console.log('URL',URL);
+    window.open(URL,'_blank');
+}
+
 function startGame () {
     needed = (columns*rows)/2;
     asNeeded = mixing.slice(0, needed);
