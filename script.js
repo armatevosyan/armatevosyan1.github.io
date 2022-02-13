@@ -40,7 +40,7 @@ buttonSelect.forEach(elem => {
 })
 
 function rulesGame () {
-    alert(" Opening The Cards Correctly 10 Points.  5 Points Are Deducted When Opened Incorrectly.")
+    alert(" Select The Filed and click on start Button. \n Opening The Cards Correctly 10 Points. \n 5 Points Are Deducted When Opened Incorrectly.")
 }
 
 function handleChangePage (URL) {
@@ -49,6 +49,11 @@ function handleChangePage (URL) {
 }
 
 function startGame () {
+    if(!columns && !rows) {
+        alert('Please Select Filed');
+        return;
+    };
+
     needed = (columns*rows)/2;
     asNeeded = mixing.slice(0, needed);
     cloneAsNeeded = asNeeded.concat(asNeeded);
